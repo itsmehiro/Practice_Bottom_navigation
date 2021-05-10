@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    display: flex;
+    font-size: 2rem;
+    min-height: 100vh;
+}
+
+main {
+    min-width: 700px;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+}
+
+footer {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        height: 1500px;
+        flex-direction: column;
+    }
+    main {
+        flex: 1;
+    }
+    footer {
+        display: block;
+        margin-bottom: 48px;
+    }
+    div {
+        display: none;
+    }
+    aside {
+        position: fixed;
+        bottom:0;
+        width: 100%;
+    }
+    ul {
+        display: flex;
+    }
+}
